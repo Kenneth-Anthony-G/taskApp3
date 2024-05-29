@@ -48,7 +48,8 @@
         ],"post-install-cmd": [
             "chmod -R 775 storage",
             "chmod -R 775 bootstrap/cache",
-            "php artisan storage:link"
+            "php artisan storage:link",
+            "php artisan migrate --force"
         ]
     },
 
