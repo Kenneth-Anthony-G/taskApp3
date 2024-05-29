@@ -47,10 +47,8 @@
             "@php artisan key:generate --ansi"
         ],"post-install-cmd": [
             "chmod -R 775 storage",
-            "chmod +x deploy.sh",
             "chmod -R 775 bootstrap/cache",
             "php artisan storage:link"
-
         ]
     },
 
