@@ -1,2 +1,2 @@
 web: php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
-release: ./deploy.sh
+release: php artisan migrate --force && php artisan storage:link && php artisan db:seed --force
